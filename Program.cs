@@ -15,11 +15,11 @@ namespace ThreadDemo
             //for (int i = 0; i < 1000; i++)
             //{
             //    Console.Write("x");
-            //}            
+            //}
 
             Thread t = new Thread(WriteY);
             t.Start();
-            //t.Join();
+            t.Join();
             Console.WriteLine("Thread t has ended！");
         }
         static void WriteY()
